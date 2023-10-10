@@ -1,6 +1,9 @@
 Feature: Signup functionality
-Scenario Outline: Signup to application
+
+Background:
 Given user is at signup page
+
+Scenario Outline: Signup to application
 When user enters "<name>" inside form
 And user enters age as <age>
 And user confirms "<gender>" checkbox
