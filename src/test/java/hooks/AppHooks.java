@@ -7,19 +7,19 @@ import io.cucumber.java.BeforeStep;
 
 public class AppHooks {
 
-	@BeforeStep
-	public void beforeStep()
-	{
-		System.out.println("Before step");
-	}
+//	@BeforeStep
+//	public void beforeStep()
+//	{
+//		System.out.println("Before step");
+//	}
+//	
+//	@AfterStep
+//	public void afterStep()
+//	{
+//		System.out.println("After step");
+//	}
 	
-	@AfterStep
-	public void afterStep()
-	{
-		System.out.println("After step");
-	}
-	
-	@After(order = 1)
+	@After("@sanity")
 	public void afterHook1()
 	{
 		System.out.println("after hook1 is executing");
@@ -31,7 +31,7 @@ public class AppHooks {
 //		System.out.println("after hook2 is executing");
 //	}
 	
-	@Before(order = 1)
+	@Before("@regression")
 	public void beforeHook1()
 	{
 		System.out.println("before hook1 is executing");
