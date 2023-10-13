@@ -7,13 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = {"src\\test\\resources\\applicationfeature\\Campaigns.feature"},
 		glue = {"steps", "hooks"},
-		publish = true,
 		tags = "@sanity or @regression"
-				
+//		dryRun = true
 		)
-
-
-
 public class CampaignsRunner extends AbstractTestNGCucumberTests {
 
 }

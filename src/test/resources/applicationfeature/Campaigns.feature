@@ -18,4 +18,4 @@
 	Scenario: Send campaign
 	Given user is at campaigns page
 	When user click on active button 
-	Then status of campaign should get sent
+	Then status of campaign should 
