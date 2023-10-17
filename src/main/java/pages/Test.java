@@ -1,21 +1,14 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
-
 public class Test {
 	
-	WebDriver driver;//null
 	
-	public void m1()
-	{
-		driver.close();
-	}
 	
 	public static void main(String[] args) {
+		int count = 12;
+		boolean f = count<1;
 		
-		Test t = new Test();
-		
-		t.m1();
+		System.out.println(f);
 		
 	}
 

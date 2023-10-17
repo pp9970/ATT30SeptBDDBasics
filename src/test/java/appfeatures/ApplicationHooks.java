@@ -1,10 +1,13 @@
 package appfeatures;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import qa.DriverFactory;
+import utility.ConfigLoader;
 
 public class ApplicationHooks {
 	DriverFactory df;
@@ -12,11 +15,13 @@ public class ApplicationHooks {
 	WebDriver driver;
 	
 	@Before
-	public void launchBrowser()
+	public void launchBrowser() throws IOException
 	{
 		df = new DriverFactory();
 		
-		driver = df.initBrowser("Chrome");
+		driver = df.initBrowser(ConfigLoader.readConfigData("browser"));
+		
+		driver.manage().window().maximize();
 	
 	}
 	
