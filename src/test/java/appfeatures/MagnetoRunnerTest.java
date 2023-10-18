@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"appfeatures"},
 		
-		plugin = {"pretty"}
+		plugin = {"pretty", "html:target/cucumber-reports/reports.html"}
 	)
 
 

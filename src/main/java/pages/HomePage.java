@@ -1,11 +1,14 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 
@@ -22,16 +25,16 @@ public class HomePage {
 	List<WebElement> results;
 
 	WebDriver driver;
-
+	WebDriverWait wait;
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 
 		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	}
 
 	public String fetchTitle() {
 		String titleOfPage = driver.getTitle();
-
 		return titleOfPage;
 	}
 
@@ -43,6 +46,7 @@ public class HomePage {
 
 	public void searchProduct(String product) {
 		searchField.sendKeys(product);
+		wait.until(ExpectedConditions.elementToBeClickable(searchButton));
 		searchButton.click();
 	}
 
