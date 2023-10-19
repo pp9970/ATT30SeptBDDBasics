@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-  <class name="runner.CampaignsRunner"></class>
+  <class name="appfeatures.MagnetoFailedRunnerTest"></class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

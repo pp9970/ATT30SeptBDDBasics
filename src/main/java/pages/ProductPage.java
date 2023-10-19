@@ -33,7 +33,7 @@ public class ProductPage {
 	@FindBy(xpath = "(//*[@class='messages' ])[1]")
 	WebElement toastMessage;
 
-	@FindBy(xpath = "//*[@id='maincontent']//*[text()='Men']")
+	@FindBy(xpath = "//*[@id='maincontent']//*[text()='Men123']")
 	WebElement menSection;
 	
 	
