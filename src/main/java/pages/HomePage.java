@@ -13,19 +13,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage {
 
 	@FindBy(xpath = "//*[@class='page-header']//*[normalize-space(text())='Sign In']")
-	WebElement signinlink;
+	private WebElement signinlink;
 
 	@FindBy(xpath = "//*[@id='search']")
-	WebElement searchField;
+	private WebElement searchField;
 
 	@FindBy(xpath = "//button[@type='submit' and @title='Search']")
-	WebElement searchButton;
+	private WebElement searchButton;
 
 	@FindBy(xpath = "//*[@class='product-item-info']")
-	List<WebElement> results;
+	private List<WebElement> results;
 
-	WebDriver driver;
-	WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 

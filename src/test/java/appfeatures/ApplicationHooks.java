@@ -22,7 +22,20 @@ public class ApplicationHooks {
 	{
 		df = new DriverFactory();
 		
-		driver = df.initBrowser(ConfigLoader.readConfigData("browser"));
+		String configBrowser = ConfigLoader.readConfigData("browser");
+		
+		String mavenCommandBrowser = System.getProperty("clibrowser");
+		
+		String environment = System.getProperty("env");
+		
+		System.out.println(environment);
+		
+		if(mavenCommandBrowser!=null)
+		{
+			configBrowser= mavenCommandBrowser;
+		}
+		
+		driver = df.initBrowser(configBrowser);
 		
 		driver.manage().window().maximize();
 	
