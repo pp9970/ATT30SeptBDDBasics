@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 18 20:55:40 IST 2023</td>
+<td>Started on:</td><td>Fri Dec 01 06:32:38 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>121 seconds (121528 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44178 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,43 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='appfeatures.MagnetoRunnerTest.runScenario()'><b>runScenario</b><br>Test class: appfeatures.MagnetoRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding product to cart", "Adding product"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6ade6fd5b030ba0c465801b4cb5f0d49)] -&gt; xpath: (//*[@class=&apos;messages&apos; ])[1]] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50429/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ade6fd5b030ba0c465801b4cb5f0d49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at pages.ProductPage.fetchMessage(ProductPage.java:82)
-	at appfeatures.ProductSteps.i_should_see_product_added_confirmation(ProductSteps.java:49)
-	at ?.I should see message contains &quot;shopping cart&quot;(file:///F:/Desktop/VimanNagar/May%2021/30SeptBDDCucumberBasics/src/test/resources/appfeatures/AddToCart.feature:13)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1788408659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1788408659'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (6ade6fd5b030ba0c465801b4cb5f0d49)] -&gt; xpath: (//*[@class=&apos;messages&apos; ])[1]] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50429/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ade6fd5b030ba0c465801b4cb5f0d49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at pages.ProductPage.fetchMessage(ProductPage.java:82)
-	at appfeatures.ProductSteps.i_should_see_product_added_confirmation(ProductSteps.java:49)
-	at ?.I should see message contains &quot;shopping cart&quot;(file:///F:/Desktop/VimanNagar/May%2021/30SeptBDDCucumberBasics/src/test/resources/appfeatures/AddToCart.feature:13)
-</pre></div></td>
-<td>74</td>
-<td>appfeatures.MagnetoRunnerTest@18df8434</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -113,25 +76,10 @@ Session ID: 6ade6fd5b030ba0c465801b4cb5f0d49
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='appfeatures.MagnetoRunnerTest.runScenario()'><b>runScenario</b><br>Test class: appfeatures.MagnetoRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of title of page", "Homepage functionality"</td>
+<td title='hooks.Basic.testCase()'><b>testCase</b><br>Test class: hooks.Basic</td>
 <td></td>
-<td>8</td>
-<td>appfeatures.MagnetoRunnerTest@18df8434</td></tr>
-<tr>
-<td title='appfeatures.MagnetoRunnerTest.runScenario()'><b>runScenario</b><br>Test class: appfeatures.MagnetoRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validation of signin link", "Homepage functionality"</td>
-<td></td>
-<td>7</td>
-<td>appfeatures.MagnetoRunnerTest@18df8434</td></tr>
-<tr>
-<td title='appfeatures.MagnetoRunnerTest.runScenario()'><b>runScenario</b><br>Test class: appfeatures.MagnetoRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "search product", "Homepage functionality"</td>
-<td></td>
-<td>12</td>
-<td>appfeatures.MagnetoRunnerTest@18df8434</td></tr>
-<tr>
-<td title='appfeatures.MagnetoRunnerTest.runScenario()'><b>runScenario</b><br>Test class: appfeatures.MagnetoRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Selecting product type", "Adding product"</td>
-<td></td>
-<td>13</td>
-<td>appfeatures.MagnetoRunnerTest@18df8434</td></tr>
+<td>44</td>
+<td>hooks.Basic@74751b3</td></tr>
 </table><p>
 </body>
 </html>
