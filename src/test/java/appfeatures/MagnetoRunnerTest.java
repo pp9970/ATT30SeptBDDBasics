@@ -12,7 +12,9 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty", "html:target/cucumber-reports/reports.html", 
 				
 				"json:target/cucumber-reports/report.json"	
-					}
+					},
+		tags = "@functional"
+		
 		
 		
 	)
