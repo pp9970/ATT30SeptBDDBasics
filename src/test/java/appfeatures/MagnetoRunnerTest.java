@@ -14,8 +14,6 @@ import io.cucumber.testng.CucumberOptions;
 				"json:target/cucumber-reports/report.json"	
 					},
 		
-		
-		
 		tags = "@functional"
 		
 		
